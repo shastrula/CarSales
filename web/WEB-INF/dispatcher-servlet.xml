@@ -21,6 +21,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
                 <prop key="index.htm">indexController</prop>
                 <prop key="welcome.htm">indexController</prop>
                 <prop key="homePage.htm">homepageController</prop>
+                <prop key="jsonSearchCars.htm">jsonSearchController</prop>
             </props>
         </property>
     </bean>
@@ -45,5 +46,9 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
          <property name="commandClass" value="com.app.cars.beans.SearchCars"/>
          
      </bean>
-    
+
+    <bean name="jsonSearchController" class="com.app.cars.controller.JSonSearchController"
+    p:commandName="command">
+        <property name="inventorySvc" ref="inventory-svc"/>
+    </bean>
 </beans>

@@ -532,6 +532,18 @@ exists or setup the property manually. For example like this:
         <copyfiles files="${libs.jstl11.classpath}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${libs.hibernate-support.classpath}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${file.reference.ojdbc14.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.json-lib-2.1-jdk13.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.commons-lang.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.ezmorph-1.0.3.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.commons-collections.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.commons-beanutils.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.log4j-1.2.13.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${file.reference.json-lib-2.1-jdk13.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.commons-lang.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.ezmorph-1.0.3.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.commons-collections.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.commons-beanutils.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.log4j-1.2.13.jar}" todir="${build.web.dir}//"/>
         <mkdir dir="${build.web.dir}/META-INF"/>
         <manifest file="${build.web.dir}/META-INF/MANIFEST.MF" mode="update"/>
     </target>
@@ -541,6 +553,18 @@ exists or setup the property manually. For example like this:
         <copyfiles files="${libs.jstl11.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${libs.hibernate-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.ojdbc14.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.json-lib-2.1-jdk13.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.commons-lang.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.ezmorph-1.0.3.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.commons-collections.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.commons-beanutils.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.log4j-1.2.13.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.json-lib-2.1-jdk13.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.commons-lang.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.ezmorph-1.0.3.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.commons-collections.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.commons-beanutils.jar}" todir="${build.web.dir}//"/>
+        <copyfiles files="${file.reference.log4j-1.2.13.jar}" todir="${build.web.dir}//"/>
     </target>
     <target depends="init" if="dist.ear.dir" name="-clean-webinf-lib">
         <delete dir="${build.web.dir}/WEB-INF/lib"/>

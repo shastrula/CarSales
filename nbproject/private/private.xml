@@ -2,13 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/applicationContext.xml</file>
-        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/dispatcher-servlet.xml</file>
         <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/jsp/homePage.jsp</file>
-        <file>file:/C:/Praveen/source/CarSales/web/redirect.jsp</file>
-        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/jsp/index.jsp</file>
-        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/inventory.xml</file>
+        <file>file:/C:/Praveen/source/CarSales/src/java/com/app/cars/controller/HomePageController.java</file>
         <file>file:/C:/Praveen/source/CarSales/src/java/com/app/cars/beans/CarModel.java</file>
-        <file>file:/C:/Praveen/source/CarSales/src/java/com/app/cars/beans/Car.java</file>
+        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/jspf/include.jsp</file>
+        <file>file:/C:/Praveen/source/CarSales/src/java/com/app/cars/controller/JSonSearchController.java</file>
+        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/dispatcher-servlet.xml</file>
+        <file>file:/C:/Praveen/source/CarSales/web/WEB-INF/inventory.xml</file>
+        <file>file:/C:/Praveen/source/CarSales/src/java/log4j.properties</file>
     </open-files>
 </project-private>

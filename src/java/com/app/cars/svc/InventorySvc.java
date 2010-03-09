@@ -16,4 +16,5 @@ import java.util.List;
 public interface InventorySvc {
 List<CarModel> showAvailableCarModels();
 List<Car> showCars();
+List<Car> searchCarModels(String model);
 }
