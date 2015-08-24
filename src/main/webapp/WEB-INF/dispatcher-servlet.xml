@@ -6,7 +6,7 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
-http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
     
     <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
     
@@ -20,8 +20,6 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="welcome.htm">indexController</prop>
-                <prop key="homePage.htm">homepageController</prop>
-                <prop key="jsonSearchCars.htm">jsonSearchController</prop>
             </props>
         </property>
     </bean>
@@ -38,17 +36,4 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
 
-     <bean name="homepageController" class="com.app.cars.controller.HomePageController"
-     p:commandName="command"
-     p:formView="homePage"
-     p:successView="homePage">
-         <property name="inventorySvc" ref="inventory-svc"/>
-         <property name="commandClass" value="com.app.cars.beans.SearchCars"/>
-         
-     </bean>
-
-    <bean name="jsonSearchController" class="com.app.cars.controller.JSonSearchController"
-    p:commandName="command">
-        <property name="inventorySvc" ref="inventory-svc"/>
-    </bean>
 </beans>

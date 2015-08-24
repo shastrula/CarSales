@@ -1,0 +1,13 @@
+apply plugin: 'war'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
+    compile 'javax.servlet:servlet-api:2.5'
+    compile 'org.json:json:20090211'
+    compile 'log4j:log4j:1.2.17'
+}
